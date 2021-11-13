@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: beige;
     text-align: center;
+    overflow-x: hidden;
 }
 
 h1,
@@ -83,4 +84,68 @@ td,
 th {
     border: 1px solid black;
     padding: 5px;
+}
+
+.locations li {
+    list-style-type: none;
+    text-align: center;
+    margin-left: -40px;
+    padding: 5px;
+}
+
+.locations {
+    margin-top: -15px;
+}
+
+.current {
+    background-color: green;
+    color: white;
+}
+
+.christmas-closure {
+    background-color: red;
+    color: white;
+    display: flex;
+}
+
+.christmas-closure h1 {
+    margin: 0;
+    color: #fff;
+}
+
+.christmas-closure h1 {
+    animation: loop 7s linear infinite;
+}
+
+/* Animation */
+@keyframes loop {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+footer {
+    background-color: green;
+    padding: 10px;
+    text-align: center;
+    color: green;
+}
+
+footer p {
+    color: #fff;
+}
+
+footer i {
+    color: #fff;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer i:hover {
+    color: darkred;
+    text-decoration: none;
 }
